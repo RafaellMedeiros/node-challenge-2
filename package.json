@@ -4,7 +4,9 @@
   "description": "Requisitos",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src -e .ts --fix"
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src -e .ts --fix",
+    "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js"
   },
   "author": "",
   "license": "ISC",
